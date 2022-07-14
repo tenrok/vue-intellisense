@@ -26,12 +26,12 @@
   "dependencies": {
     "@vue-intellisense/scripts": "^1.0.1",
     "case-anything": "^2.1.10",
-    "chalk": "^5.0.0",
+    "chalk": "^5.0.1",
     "is-what": "^4.1.7",
     "log-symbols": "^5.1.0",
-    "meow": "^10.1.2",
-    "ora": "^6.0.1",
-    "vue-docgen-api": "^4.44.15"
+    "meow": "^10.1.3",
+    "ora": "^6.1.2",
+    "vue-docgen-api": "^4.47.0"
   },
   "bin": {
     "vue-int": "cli.js"
