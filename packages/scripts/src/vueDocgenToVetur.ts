@@ -14,7 +14,8 @@ export function vueDocgenToVetur(
   if (veturFile === 'attributes') {
     const props = vueDocgen.props || []
     return props.reduce((carry: any, vueDocgenProp: any) => {
-      const { name, description, type: _type, values = [], tags: customTags = {} } = vueDocgenProp
+      let { name, description, type: _type, values = [], tags: customTags = {} } = vueDocgenProp
+      name = kebabCase(name)
       const attributeName = `${componentNameKebab}/${name}`
       const attributePascal = `${componentNamePascal}/${name}`
       const t = _type?.name || ''
@@ -43,7 +44,7 @@ export function vueDocgenToVetur(
   }
   if (veturFile === 'tags') {
     const props = vueDocgen.props || []
-    const attributes = props.map(({ name }: any) => name)
+    const attributes = props.map(({ name }: any) => kebabCase(name))
     return {
       [componentNameKebab]: { attributes, description: vueDocgen.description || '' },
       [componentNamePascal]: { attributes, description: vueDocgen.description || '' },
