@@ -1,10 +1,7 @@
 {
-  "name": "vue-intellisense",
-  "version": "1.0.1",
-  "type": "module",
+  "name": "@tenrok/vue-intellisense",
+  "version": "1.0.2",
   "description": "A CLI tool to help enabling IntelliSense on your Vue components",
-  "author": "Luca Ban - Mesqueeb",
-  "scripts": {},
   "keywords": [
     "vue-intellisense",
     "vue-autocomplete",
@@ -13,18 +10,26 @@
     "node",
     "cli"
   ],
-  "license": "MIT",
   "homepage": "https://github.com/CyCraft/vue-intellisense#readme",
+  "bugs": {
+    "url": "https://github.com/CyCraft/vue-intellisense/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CyCraft/vue-intellisense.git"
   },
-  "bugs": {
-    "url": "https://github.com/CyCraft/vue-intellisense/issues"
+  "license": "MIT",
+  "author": "Luca Ban - Mesqueeb",
+  "type": "module",
+  "bin": {
+    "vue-int": "cli.js"
   },
-  "gitHead": "7a52c73677fc5550368eb358a9775aea3fc69e0e",
+  "files": [
+    "cli.js"
+  ],
+  "scripts": {},
   "dependencies": {
-    "@vue-intellisense/scripts": "^1.0.1",
+    "@tenrok/vue-intellisense-scripts": "^1.0.2",
     "case-anything": "^2.1.10",
     "chalk": "^5.0.1",
     "is-what": "^4.1.7",
@@ -33,13 +38,8 @@
     "ora": "^6.1.2",
     "vue-docgen-api": "^4.47.0"
   },
-  "bin": {
-    "vue-int": "cli.js"
-  },
   "engines": {
     "node": ">=14.19"
   },
-  "files": [
-    "cli.js"
-  ]
+  "gitHead": "7a52c73677fc5550368eb358a9775aea3fc69e0e"
 }

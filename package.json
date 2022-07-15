@@ -1,22 +1,31 @@
 {
-  "name": "vue-intellisense",
+  "name": "@tenrok/vue-intellisense",
   "private": true,
+  "homepage": "https://github.com/cycraft/vue-intellisense#readme",
+  "bugs": {
+    "url": "https://github.com/cycraft/vue-intellisense/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cycraft/vue-intellisense.git"
+  },
+  "funding": "https://github.com/sponsors/mesqueeb",
+  "license": "MIT",
+  "author": "Luca Ban - Mesqueeb",
   "workspaces": [
     "packages/*"
   ],
-  "author": "Luca Ban - Mesqueeb",
-  "funding": "https://github.com/sponsors/mesqueeb",
   "scripts": {
     "audit": "lerna-audit",
-    "test": "lerna run test",
     "build": "rollup -c ./build/buildScripts.js",
     "build-and-commit": "npm run build && git add -A && git commit -m \"chore: build\"",
     "copy:readme": "copyfiles 'README.md' packages/vue-intellisense",
-    "dep:update-all": "ncu -u && lerna exec 'ncu -u' && npm i",
     "dep:check-for-updates": "ncu --target minor && lerna exec 'ncu --target minor'",
     "dep:reinstall-all": "rimraf node_modules && lerna clean -y && npm i",
-    "test:scripts": "cd packages/scripts && npm run test",
-    "publish": "npm run copy:readme && npm run build-and-commit && lerna publish"
+    "dep:update-all": "ncu -u && lerna exec 'ncu -u' && npm i",
+    "publish": "npm run copy:readme && npm run build-and-commit && lerna publish",
+    "test": "lerna run test",
+    "test:scripts": "cd packages/scripts && npm run test"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.13",
@@ -29,14 +38,5 @@
     "rollup-plugin-typescript2": "^0.32.1",
     "typescript": "^4.7.4",
     "vitest": "^0.18.0"
-  },
-  "license": "MIT",
-  "homepage": "https://github.com/cycraft/vue-intellisense#readme",
-  "bugs": {
-    "url": "https://github.com/cycraft/vue-intellisense/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cycraft/vue-intellisense.git"
   }
 }

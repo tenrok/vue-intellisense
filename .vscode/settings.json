@@ -1,15 +1,26 @@
 {
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[vue]": { "editor.defaultFormatter": "octref.vetur" },
-  "[sass]": { "editor.defaultFormatter": "syler.sass-indented" },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "//[sass]": {
+    "editor.defaultFormatter": "syler.sass-indented"
+  },
   // Lerna monorepo related settings
-  "eslint.workingDirectories": [{ "pattern": "./packages/*/" }],
-
+  "//eslint.workingDirectories": [
+    {
+      "pattern": "./packages/*/"
+    }
+  ],
   // make sure vetur is enabled
-  "eslint.validate": ["javascript", "javascriptreact", "typescript", "vue"],
+  "//eslint.validate": ["javascript", "javascriptreact", "typescript", "vue"],
   "vetur.experimental.templateInterpolationService": false,
   "vetur.format.enable": true,
   "vetur.validation.style": true,
@@ -18,7 +29,7 @@
   // disable conflicting formatting
   "javascript.validate.enable": true,
   "typescript.format.enable": true,
-  "standard.enable": false,
+  "//standard.enable": false,
   // global important defaults
   "editor.tabSize": 2, // make sure this is the same as .prettierrc
   "editor.insertSpaces": true,
@@ -32,11 +43,11 @@
   "vetur.format.defaultFormatter.js": "prettier",
   // sass
   "vetur.format.defaultFormatter.sass": "sass-formatter",
-  "sass.format.debug": false,
-  "sass.format.deleteEmptyRows": true,
-  "sass.format.deleteWhitespace": true,
-  "sass.format.convert": true,
-  "sass.format.setPropertySpace": true,
+  "//sass.format.debug": false,
+  "//sass.format.deleteEmptyRows": true,
+  "//sass.format.deleteWhitespace": true,
+  "//sass.format.convert": true,
+  "//sass.format.setPropertySpace": true,
   // typescript
   "typescript.tsdk": "node_modules/typescript/lib"
 }

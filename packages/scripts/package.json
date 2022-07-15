@@ -1,15 +1,12 @@
 {
-  "name": "@vue-intellisense/scripts",
-  "version": "1.0.1",
+  "name": "@tenrok/vue-intellisense-scripts",
+  "version": "1.0.2",
   "type": "module",
   "main": "dist/index.esm.js",
   "module": "dist/index.esm.js",
   "types": "dist/types/index.d.ts",
   "scripts": {
     "test": "rimraf test/helpers/out && vitest --run"
-  },
-  "engines": {
-    "node": ">=14.19"
   },
   "dependencies": {
     "case-anything": "^2.1.10",
@@ -19,5 +16,8 @@
     "merge-anything": "^5.0.2",
     "path-to-prop": "^2.0.2",
     "vue-docgen-api": "^4.47.0"
+  },
+  "engines": {
+    "node": ">=14.19"
   }
 }

@@ -5,7 +5,7 @@ import chalk from 'chalk'
 import ora from 'ora'
 import * as IsWhat from 'is-what'
 const { isFullString } = IsWhat
-import * as VueIntellisenseScripts from '@vue-intellisense/scripts'
+import * as VueIntellisenseScripts from '@tenrok/vue-intellisense-scripts'
 const { generateVeturFiles } = VueIntellisenseScripts
 
 const cli = meow(
