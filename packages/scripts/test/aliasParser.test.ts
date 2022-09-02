@@ -83,3 +83,15 @@ test('throw not when wrong nested object path', () => {
 //   const parsedAliases = await readAndParseAlias(input)
 //   expect(parsedAliases).toEqual(expectValue)
 // })
+
+test('correctly get aliases in (js|ts) config file', async () => {
+  const input = ['test/helpers/alias/tsconfig.json']
+  const mapAliases: Record<string, string> = {
+    '@': '.',
+    '@src': './src',
+    '@components': './src/components',
+  }
+  const expectValue: Record<string, string> = getExpectValueForMapAliases(mapAliases)
+  const parsedAliases = await readAndParseAlias(input)
+  expect(parsedAliases).toEqual(expectValue)
+})
