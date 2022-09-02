@@ -14,7 +14,7 @@ function getAbsolutePath(filePath: string): string {
 function readJsTsConfig(jsTsConfigPath: string) {
   const tsconfigAbsolutePath = getAbsolutePath(jsTsConfigPath)
   if (!fs.existsSync(tsconfigAbsolutePath)) return null
-  const tsconfig = require(tsconfigAbsolutePath)
+  const tsconfig = JSON.parse(fs.readFileSync(tsconfigAbsolutePath, 'utf8'))
   return tsconfigAbsolutePath.endsWith('.json') && tsconfig
 }
 
