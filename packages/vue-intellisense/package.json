@@ -1,6 +1,6 @@
 {
   "name": "@tenrok/vue-intellisense",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A CLI tool to help enabling IntelliSense on your Vue components",
   "keywords": [
     "vue-intellisense",
@@ -29,7 +29,7 @@
   ],
   "scripts": {},
   "dependencies": {
-    "@tenrok/vue-intellisense-scripts": "^1.0.2",
+    "@tenrok/vue-intellisense-scripts": "^1.0.3",
     "case-anything": "^2.1.10",
     "chalk": "^5.0.1",
     "is-what": "^4.1.7",
